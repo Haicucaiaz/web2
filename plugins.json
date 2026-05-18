@@ -13,7 +13,7 @@
         },
         {
             "id": "kkphim",
-            "name": "Nguồn 2",
+            "name": "Nguồn 2 (Đang Lỗi)",
             "version": "1.0.1",
             "scriptUrl": "https://raw.githubusercontent.com/Haicucaiaz/web2/refs/heads/main/kkphim_plugin.js",
             "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/kkphim.png"
@@ -27,7 +27,7 @@
         },
         {
             "id": "clbpx",
-            "name": "CLB Phim Xưa",
+            "name": "CLB Phim Xưa (Đang Lỗi)",
             "version": "1.0.6",
             "scriptUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/clbpx_plugin.js",
             "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/clbpx.ico"
