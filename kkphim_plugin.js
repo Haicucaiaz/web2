@@ -191,7 +191,7 @@ function parseMovieDetail(apiResponseJson) {
             if (server.server_data) {
                 server.server_data.forEach(function (ep) {
                     serverEpisodes.push({
-                        id: ep.link_m3u8 || ep.link_embed, // Use m3u8 as ID
+                        id: (ep.link_m3u8 || ep.link_embed).replace(/^http:/, 'https:'), // Use m3u8 as ID
                         name: ep.name,
                         slug: ep.slug
                     });
