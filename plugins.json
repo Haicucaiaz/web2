@@ -13,7 +13,7 @@
         },
         {
             "id": "kkphim",
-            "name": "Nguồn 2 (Đang Lỗi)",
+            "name": "Nguồn 2",
             "version": "1.0.1",
             "scriptUrl": "https://raw.githubusercontent.com/Haicucaiaz/web2/refs/heads/main/kkphim_plugin.js",
             "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/kkphim.png"
