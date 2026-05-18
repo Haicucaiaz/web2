@@ -246,21 +246,20 @@ function parseMovieDetail(apiResponseJson) {
     } catch (error) { return "null"; }
 }
 
-function parseDetailResponse(apiResponseJson) {
-
-    // However, conforming to the interface:
-    return JSON.stringify({
-        url: "", // In this architecture, the episode ID *is* the URL, so this might be redundant or used for resolving.
-        // But since I don't see `episodeId` passed to `getStreamLink` in `MovieRepository` signature...
-        // Wait, `MovieRepository` signature IS `getStreamLink(movieSlug: String)`?
-        // That's weird. How does it know WHICH episode?
-
-        // Checking `PlayerScreen.kt` or `VideoPlayerControls.kt` would clarify this but I'm in writing file mode.
-        // I'll assume for KKPhim, if I return empty URL here, the Player might use the episode ID passed to it?
-        // Actually, I'll return the raw response just in case.
-        headers: { "User-Agent": "Mozilla/5.0", "Referer": "https://phimapi.com" },
-        subtitles: []
-    });
+function parseDetailResponse(apiResponseJson) { 
+    try {
+        var data = JSON.parse(apiResponseJson);
+        var url = data.url || "";
+        return JSON.stringify({ 
+            url: url, 
+            headers: { 
+                "Referer": "https://phimapi.com/",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            } 
+        });
+    } catch(e) { 
+        return JSON.stringify({ url: "", headers: {} }); 
+    }
 }
 
 function parseCategoriesResponse(apiResponseJson) {
