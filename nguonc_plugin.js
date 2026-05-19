@@ -379,3 +379,27 @@ function getImageUrl(path) {
     // Base image URL for NguonC
     return "https://img.phimapi.com/" + path;
 }
+// expose functions to window
+window.getManifest = getManifest;
+window.getHomeSections = getHomeSections;
+window.getPrimaryCategories = getPrimaryCategories;
+window.getFilterConfig = getFilterConfig;
+
+window.getUrlList = getUrlList;
+window.getUrlSearch = getUrlSearch;
+window.getUrlDetail = getUrlDetail;
+
+window.getUrlCategories = getUrlCategories;
+window.getUrlCountries = getUrlCountries;
+window.getUrlYears = getUrlYears;
+
+window.parseListResponse = parseListResponse;
+window.parseSearchResponse = parseSearchResponse;
+window.parseMovieDetail = parseMovieDetail;
+window.parseDetailResponse = parseDetailResponse;
+
+window.parseCategoriesResponse = parseCategoriesResponse;
+window.parseCountriesResponse = parseCountriesResponse;
+window.parseYearsResponse = parseYearsResponse;
+
+window.getImageUrl = getImageUrl;
