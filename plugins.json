@@ -20,7 +20,7 @@
         },
         {
             "id": "nguonc",
-            "name": "Nguồn 3 (Đang Lỗi)",
+            "name": "Nguồn 3",
             "version": "1.0.8",
             "scriptUrl": "https://raw.githubusercontent.com/Haicucaiaz/web2/refs/heads/main/nguonc_plugin.js",
             "iconUrl": "https://raw.githubusercontent.com/youngbi/repo/main/plugins/nguonC.png"
